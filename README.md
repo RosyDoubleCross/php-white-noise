@@ -3,6 +3,8 @@ php-white-noise
 
 This is a simple command line white noise GIF generator written in PHP.
 
+It requires the PHP to be installed with GD support. More information is available [on the PHP website](http://php.net/manual/en/ref.image.php).
+
 Usage
 -----
 
@@ -10,7 +12,7 @@ Usage
 $ php white_noise.php [numColumns [numRows [dotSize [numFrames]]]]
 ```
 
-This command will create a directory named "noise" and populate it with _*numFrames*_ GIF files named noise00.gif through noiseNN.gif, each containing a grid of _*numColumns*_ x _*numRows*_ _*dotSize*_-pixel-squared dots of black or white, randomly selected. These files may then be fed to another utility such as gifsicle to create an animated GIF file.
+This command will create a directory named "noise" and populate it with *numFrames* GIF files named noise00.gif through noiseNN.gif, each containing a grid of *numColumns* x *numRows* *dotSize*-pixel-squared dots of black or white, randomly selected. These files may then be fed to another utility such as gifsicle to create an animated GIF file.
 
 All arguments are optional. Default values are:
 * numColumns = 640
