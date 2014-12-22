@@ -7,24 +7,24 @@ Usage
 -----
 
 ```
-$ php white\_noise.php [numColumns [numRows [dotSize [numFrames]]]]
+$ php white_noise.php [numColumns [numRows [dotSize [numFrames]]]]
 ```
 
-This command will create a directory named "noise" and populate it with *numFrames* GIF files named noise00.gif through noiseNN.gif, each containing a grid of *numColumns* x *numRows* *dotSize*-pixel-squared dots of black or white, randomly selected. These files may then be fed to another utility such as gifsicle to create an animated GIF file.
+This command will create a directory named "noise" and populate it with _*numFrames*_ GIF files named noise00.gif through noiseNN.gif, each containing a grid of _*numColumns*_ x _*numRows*_ _*dotSize*_-pixel-squared dots of black or white, randomly selected. These files may then be fed to another utility such as gifsicle to create an animated GIF file.
 
 All arguments are optional. Default values are:
+* numColumns = 640
+* numRows = 360
+* dotSize = 1
+* numFrames = 16
 
- numColumns = 640
- numRows = 360
- dotSize = 1
- numFrames = 16
-
-Examples:
+Examples
+--------
 
 ```
-$ php white\_noise.php
-$ php white\_noise.php 160 90 4
-$ php white\_noise.php 32 32 1 100
+$ php white_noise.php
+$ php white_noise.php 160 90 4
+$ php white_noise.php 32 32 1 100
 ```
 
 License
